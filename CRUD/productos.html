@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="productos.css">
+</head>
+<body>
+    <h1 class="border">C.r.u.d De Productos</h1>
+    <h1 class="wave"> C.r.u.d De Productos</h1>
+
+    <div id="divform">
+        <form id="productForm">
+            <label for="productName">Nombre:</label>
+            <input type="text" id="productName" required>
+            
+            <label for="productCode">Código:</label>
+            <input type="text" id="productCode" required>
+            
+            <label for="productPrice">Precio:</label>
+            <input type="number" id="productPrice" required>
+            
+            <label for="productQuantity">Cantidad:</label>
+            <input type="number" id="productQuantity" required>
+            
+            <button type="button" onclick="addOrEditProduct()">Agregar/editar Producto</button>
+        </form>
+
+    </div>
+
+
+
+    <table id="productTable" border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Código</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Total con IVA</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="productTableBody"></tbody>
+    </table>
+    <div id="otros">
+    <div id="totalVAT">Total IVA del Inventario: </div>
+    <div id="maxPriceProduct">Producto de Mayor Precio: </div>
+    <div id="minPriceProduct">Producto de Menor Precio: </div>
+    </div>
+
+
+ 
+
+
+
+    <script src="productos.js">
+       
+    </script>
+</body>
+</html>

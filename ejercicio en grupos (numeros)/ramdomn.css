@@ -1,0 +1,28 @@
+.estilo{
+    height: 50px;
+    width: 100px;
+    background-color: yellowgreen;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    
+}
+.estilo1{
+padding: 10px;
+    background-color: rgb(62, 83, 18);
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+#section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}

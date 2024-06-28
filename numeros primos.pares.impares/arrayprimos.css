@@ -1,0 +1,57 @@
+body{
+    background-color: cyan;
+}
+
+h1{
+    color: lightblue;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+#array{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.caja1{
+    background-color:darkviolet;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    margin: 10px;
+    height: auto;
+    display: flex;
+    border-radius: 15px;
+}
+.caja{
+    background-color: darkviolet;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40%;
+    margin: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+
+}
+
+p{
+    color: white;
+}
+
+#xd{
+    color: white;
+    font-size: 30px;
+
+}
+
+

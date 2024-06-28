@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Vendedores</title>
+    <link rel="stylesheet" href="vendedores.css">
+
+</head>
+<body>
+
+    <h1 class="border">C.r.u.d de Vendedores</h1>
+    <h1 class="wave"> C.r.u.d de Vendedores</h1>
+
+    <div id="a">
+
+        <form id="vendedorForm">
+
+    <h2>Formulario de Vendedores</h2>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+    
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" required>
+    
+            <label for="celular">Celular:</label>
+            <input type="text" id="celular" required>
+    
+            <label for="documento">Documento:</label>
+            <input type="text" id="documento" required>
+    
+            <button type="button" onclick="agregarVendedor()">Agregar/editar  Vendedor</button>
+        </form>
+
+        <form id="ventaForm">
+
+    <h2>Formulario de Ventas</h2>
+
+            <label for="documentoVenta">Número de Documento del Vendedor:</label>
+            <input type="text" id="documentoVenta" required>
+    
+            <label for="producto">Nombre del Producto:</label>
+            <input type="text" id="producto" required>
+    
+            <label for="precio">Precio del Producto:</label>
+            <input type="number" id="precio" required>
+    
+            <label for="cantidad">Cantidad Vendida:</label>
+            <input type="number" id="cantidad" required>
+    
+            <button type="button" onclick="agregarVenta()">Agregar Venta</button>
+            <button type="button" id="guardarVentaBtn" style="display: none;" onclick="guardarCambiosVenta()">Guardar Cambios</button>
+        </form>
+
+    </div>
+
+
+    <h2>Listado de Vendedores</h2>
+    <table id="tablaVendedores">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Celular</th>
+                <th>Documento</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="bodyVendedores">
+        </tbody>
+    </table>
+
+
+
+
+
+    <h2>Listado de Ventas</h2>
+    <table id="tablaVentas">
+        <thead>
+            <tr>
+                <th>Vendedor</th>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+                <th>Comisión</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="bodyVentas">
+        </tbody>
+    </table>
+
+
+    <h2>Consulta de Comisión Total</h2>
+
+    <div id="b">
+        <form id="comisionTotalForm">
+            <label for="documentoComision">Número de Documento del Vendedor:</label>
+            <input type="text" id="documentoComision" required>
+        
+            <button type="button" onclick="mostrarComisionTotal()">Mostrar Comisión Total</button>
+        </form>
+    </div>
+
+    
+    <h2>Comisión Total por Vendedor</h2>
+    <table id="tablaComisionTotal">
+        <thead>
+            <tr>
+                <th>Vendedor</th>
+                <th>Comisión Total</th>
+            </tr>
+        </thead>
+        <tbody id="bodyComisionTotal">
+            <!-- Aquí se mostrará la comisión total -->
+        </tbody>
+    </table>
+    
+    <script src="vendedores.js"></script>
+</body>
+</html>
+

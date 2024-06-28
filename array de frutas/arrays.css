@@ -1,0 +1,10 @@
+#hola{
+    background-color: red;
+    height: 60px;
+    width: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

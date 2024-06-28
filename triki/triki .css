@@ -1,0 +1,73 @@
+body{
+    text-align: center;
+    background-color: rgb(54, 54, 54);
+
+}
+
+h1{
+    font-size: 80px;
+    position: absolute;
+top: 0;
+left: 560px;
+
+}
+
+.border{
+    color:rgb(255, 255, 255);
+    text-shadow: -4px -4px 0 rgb(0, 0, 0),
+    1px -1px 0 white,
+    1px 1px 0 white,
+    -1px 1px 0 white
+}
+.wave{
+    color: purple;
+    animation: wave 3s ease-in-out infinite;
+}
+@keyframes wave{
+    0%, 100%{
+        clip-path: polygon(
+            0% 47%, 
+            10% 48%,
+            33% 54%, 
+            54% 60%, 
+            70% 61%, 
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+        );
+    }
+    50%{
+        clip-path: polygon(
+            0% 60%,
+            15% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+        );
+    }
+}
+
+button{
+    height: 150px;
+    width: 150px;
+    border:solid 3px black;
+}
+button:hover{
+    background-color: rgba(119, 0, 255, 0.664);
+}
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 450px;
+    margin : 170px auto;
+}
+span{
+    font-size: 50px;
+
+}
+

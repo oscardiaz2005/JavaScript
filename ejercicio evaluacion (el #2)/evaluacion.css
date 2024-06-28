@@ -1,0 +1,47 @@
+section{
+    width: 80%;
+    height: 500px;
+    background-color: lightblue;
+    border: solid 3px blue;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#cantidad{
+    background-color: lightblue;
+    border: solid 3px blue;
+    border-radius: 30px;
+    height: 400px;
+    width: 30%;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#mayor{
+    background-color: lightblue;
+    border: solid 3px blue;
+    border-radius: 30px;
+    height: 400px;
+    width: 30%;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+#menor{
+    background-color: lightblue;
+    border: solid 3px blue;
+    border-radius: 30px;
+    height: 400px;
+    width: 30%;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}

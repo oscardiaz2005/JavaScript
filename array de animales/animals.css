@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+#alazar{
+    height: 400px;
+    width: 500px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 30px;
+    font-family: inherit;
+    color: white;
+    border: solid 5px red;
+    
+}
+#table{
+    background-color: red;
+}
+td{
+  background-color: black;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    color: white;
+}
+th{
+    background-color: black;
+    height: 40px;
+    width: 100px;
+    color: white;   
+}
+#section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+button{
+    height: 100px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: black;
+    font-family: inherit;
+    color: white;
+    border: solid 5px red;
+
+}
+input{
+    height: 92px;
+    width: 185px;
+    border-radius: 20px;
+    background-color: black;
+    text-align: center;
+    color: white;
+   
+    border: solid 5px red;
+}
+input::placeholder{
+    color: blue;
+    font-family: inherit;
+    color: white;
+}
+.img{
+    height: 300px;
+    width: 450px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#botones{
+    display: flex;
+    flex-direction: column;
+}
